@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Map</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/jscript.js" defer></script>
+  <script 
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD6sRn7kLNuQuQDCfeyDbaQhK-zxpWKXgw&callback=initMap" async
+  ></script>
+</head>
+
+<body class="page4">
+  <nav>
+    <ul>
+      <li><a href="index.html">Resume</a></li>
+      <li><a href="page2.html">Foundation</a></li>
+      <li><a href="page3.html">About Me</a></li>
+      <li><a href="page4.html">Map</a></li>
+    </ul>
+  </nav>
+
+  <section id="map-intro">
+    <h1>Map</h1>
+    <p>Here’s a map showing where I live. You can search for any other city using the box below</p>
+  </section>
+
+  <section id="map-controls">
+    <h2>Search a City</h2>
+    <input type="text" id="input-city" placeholder="Enter a city">
+    <button id="search-loc-btn">Go</button>
+  </section>
+
+  <section id="map-container">
+    <h2 class="visually-hidden">Map</h2>
+    <div id="map" style="height: 400px; width: 100%; border-radius: 8px;"></div>
+  </section>
+</body>
+</html>
